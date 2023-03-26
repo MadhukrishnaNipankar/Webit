@@ -66,7 +66,11 @@ function MoreDetails() {
           </Stack>
         </div>
         <hr />
-        <div className="container">
+        <div>
+          <div style={{ fontSize: "1.3rem" }}>
+            <i>Contribute a Solution</i>
+          </div>
+
           <button
             onClick={() => handleClick()}
             type="button"
@@ -125,9 +129,8 @@ function MoreDetails() {
                   </Stack>
                 </code>
                 <p>
-                  "/tdetailed/:id" (this should be only in your routing
-                  component to specify that it's an id that is part of the exact
-                  route)
+                  this should be only in your routing component to specify that
+                  it's an id that is part of the exact route
                 </p>
               </div>
               <div className="my-2 card shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -167,9 +170,8 @@ function MoreDetails() {
                   </Stack>
                 </code>
                 <p>
-                  "/tdetailed/:id" (this should be only in your routing
-                  component to specify that it's an id that is part of the exact
-                  route)
+                  this should be only in your routing component to specify that
+                  it's an id that is part of the exact route
                 </p>
               </div>
 
@@ -210,9 +212,8 @@ function MoreDetails() {
                   </Stack>
                 </code>
                 <p>
-                  "/tdetailed/:id" (this should be only in your routing
-                  component to specify that it's an id that is part of the exact
-                  route)
+                  this should be only in your routing component to specify that
+                  it's an id that is part of the exact route
                 </p>
               </div>
 
