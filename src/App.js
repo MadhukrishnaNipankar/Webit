@@ -9,6 +9,7 @@ import HeroSection from "./Components/HeroSection";
 
 // Page Imports
 import Login from "./Pages/Login";
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HeroSection />} />
           <Route path="/login" exact element={<Login />} />
+          <Route path="/home" exact element={<Home />} />
         </Routes>
       </Router>
     </div>

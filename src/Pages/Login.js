@@ -1,12 +1,14 @@
 import React from "react";
 import { useToast } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 function Login() {
   const toast = useToast();
+  const navigate = useNavigate();
   return (
     <div
       style={{
         width: "100vw",
-        height: "100vh",
+        height: "70vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -17,7 +19,7 @@ function Login() {
       <div
         className="shadow p-3 mb-5 bg-body-tertiary rounded card border d-flex flex-column justify-content-center"
         style={{
-          maxWidth: "25rem",
+          maxWidth: "20rem",
           padding: "2rem",
           borderRadius: "1rem",
           backgroundColor: "white",
@@ -53,15 +55,7 @@ function Login() {
         <button
           type="button"
           class="btn btn-dark"
-          onClick={() =>
-            toast({
-              title: "Logging in",
-              description: "Just Wait for a moment",
-              status: "success",
-              duration: 9000,
-              isClosable: true,
-            })
-          }
+          onClick={() => navigate("/home")}
         >
           Login
         </button>
