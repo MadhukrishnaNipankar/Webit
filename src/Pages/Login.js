@@ -1,8 +1,6 @@
 import React from "react";
-import { useToast } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 function Login() {
-  const toast = useToast();
   const navigate = useNavigate();
   return (
     <div

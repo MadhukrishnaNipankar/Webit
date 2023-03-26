@@ -1,17 +1,15 @@
 import React from "react";
 import { Code, Stack, Badge } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
-import { useState } from "react";
-
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
 } from "@chakra-ui/react";
+
 function MoreDetails() {
   const [size, setSize] = React.useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -74,12 +72,12 @@ function MoreDetails() {
             type="button"
             class="btn btn-dark"
             key={size}
-            m={4}
           >
             View Solutions
           </button>
         </div>
 
+        {/* View Solutions Drawer */}
         <Drawer onClose={onClose} isOpen={isOpen} size={size}>
           <DrawerOverlay />
           <DrawerContent>
@@ -92,7 +90,6 @@ function MoreDetails() {
             <DrawerBody>
               {/* Solution 1 */}
               <div className="my-2 card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <h5></h5>
                 <p>
                   What you are trying to do is link the entire group of objects
                   to one specific object. Instead you should put the Link

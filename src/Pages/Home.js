@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { useToast } from "@chakra-ui/react";
 import { Badge, Stack } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@chakra-ui/react";
 function Home() {
   const navigate = useNavigate();
 
@@ -16,7 +15,7 @@ function Home() {
       isClosable: true,
       position: "top",
     });
-  }, []);
+  });
 
   return (
     <div
