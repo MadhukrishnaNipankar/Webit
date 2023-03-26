@@ -10,6 +10,7 @@ import HeroSection from "./Components/HeroSection";
 // Page Imports
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
+import MoreDetails from "./Pages/MoreDetails";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" exact element={<HeroSection />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/home" exact element={<Home />} />
+          <Route path="/home/:id" exact element={<MoreDetails />} />
         </Routes>
       </Router>
     </div>

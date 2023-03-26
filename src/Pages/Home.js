@@ -70,9 +70,14 @@ function Home() {
           <button
             type="button"
             class="btn btn-dark my-3"
-            onClick={() => navigate("/home")}
+            style={{ maxWidth: "7rem" }}
+            onClick={() =>
+              navigate(
+                "/home/reCAPTCHA callback not working for Firebase Phone Auth"
+              )
+            }
           >
-            Answer/Reply to this question
+            More
           </button>
         </div>
 
@@ -100,9 +105,14 @@ function Home() {
           <button
             type="button"
             class="btn btn-dark my-3"
-            onClick={() => navigate("/home")}
+            style={{ maxWidth: "7rem" }}
+            onClick={() =>
+              navigate(
+                "/home/reCAPTCHA callback not working for Firebase Phone Auth"
+              )
+            }
           >
-            Answer/Reply to this question
+            More
           </button>
         </div>
 
@@ -130,9 +140,14 @@ function Home() {
           <button
             type="button"
             class="btn btn-dark my-3"
-            onClick={() => navigate("/home")}
+            style={{ maxWidth: "7rem" }}
+            onClick={() =>
+              navigate(
+                "/home/reCAPTCHA callback not working for Firebase Phone Auth"
+              )
+            }
           >
-            Answer/Reply to this question
+            More
           </button>
         </div>
 
@@ -160,9 +175,14 @@ function Home() {
           <button
             type="button"
             class="btn btn-dark my-3"
-            onClick={() => navigate("/home")}
+            style={{ maxWidth: "7rem" }}
+            onClick={() =>
+              navigate(
+                "/home/reCAPTCHA callback not working for Firebase Phone Auth"
+              )
+            }
           >
-            Answer/Reply to this question
+            More
           </button>
         </div>
 
@@ -190,9 +210,49 @@ function Home() {
           <button
             type="button"
             class="btn btn-dark my-3"
-            onClick={() => navigate("/home")}
+            style={{ maxWidth: "7rem" }}
+            onClick={() =>
+              navigate(
+                "/home/reCAPTCHA callback not working for Firebase Phone Auth"
+              )
+            }
           >
-            Answer/Reply to this question
+            More
+          </button>
+        </div>
+
+        <div
+          className="my-3 card"
+          style={{ maxWidth: "40rem", padding: "2rem" }}
+        >
+          <div className="question">
+            <h5 style={{ fontWeight: "bold" }}>
+              {" "}
+              reCAPTCHA callback not working for Firebase Phone Auth
+            </h5>
+          </div>
+          <p className="description ">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+            quaerat voluptates dicta placeat eveniet sed! Cumque vero tenetur
+            unde at...
+          </p>
+          <Stack direction="row">
+            <Badge colorScheme="green">Python</Badge>
+            <Badge colorScheme="red">Pandas</Badge>
+            <span style={{ fontSize: "2vh" }}>asked 30 minutes ago</span>
+          </Stack>
+
+          <button
+            type="button"
+            class="btn btn-dark my-3"
+            style={{ maxWidth: "7rem" }}
+            onClick={() =>
+              navigate(
+                "/home/reCAPTCHA callback not working for Firebase Phone Auth"
+              )
+            }
+          >
+            More
           </button>
         </div>
       </div>
