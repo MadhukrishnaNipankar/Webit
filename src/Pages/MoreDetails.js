@@ -254,9 +254,8 @@ function MoreDetails() {
                   </Stack>
                 </code>
                 <p>
-                  "/tdetailed/:id" (this should be only in your routing
-                  component to specify that it's an id that is part of the exact
-                  route)
+                  this should be only in your routing component to specify that
+                  it's an id that is part of the exact route
                 </p>
               </div>
             </DrawerBody>
