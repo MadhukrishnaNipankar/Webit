@@ -16,7 +16,7 @@ function Home() {
     >
       <div
         className="container my-3"
-        style={{ display: "flex", justifyContent: "flex-end" }}
+        style={{ display: "flex", justifyContent: "center" }}
       >
         <button
           type="button"
@@ -25,9 +25,17 @@ function Home() {
         >
           Ask a question
         </button>
+
+        <button
+          type="button"
+          class="btn btn-dark mx-3"
+          onClick={() => navigate("/myprofile")}
+        >
+          My Profile
+        </button>
       </div>
 
-      <div style={{ alignSelf: "center" }}>
+      <div className="my-3" style={{ alignSelf: "center" }}>
         <h4>Recently Asked Questions</h4>
 
         {/* Questions */}
