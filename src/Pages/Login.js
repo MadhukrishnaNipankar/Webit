@@ -1,6 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useToast } from "@chakra-ui/react";
+
 function Login() {
+  const toast = useToast();
   const navigate = useNavigate();
   return (
     <div
@@ -53,7 +56,16 @@ function Login() {
         <button
           type="button"
           class="btn btn-dark"
-          onClick={() => navigate("/home")}
+          onClick={() => {
+            toast({
+              title: "Logged in Successfully",
+              status: "success",
+              duration: 9000,
+              isClosable: true,
+              position: "top",
+            });
+            navigate("/home");
+          }}
         >
           Login
         </button>

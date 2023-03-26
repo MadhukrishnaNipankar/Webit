@@ -11,6 +11,7 @@ import HeroSection from "./Components/HeroSection";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
 import MoreDetails from "./Pages/MoreDetails";
+import AskQuestion from "./Pages/AskQuestion";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" exact element={<HeroSection />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/home" exact element={<Home />} />
+          <Route path="/ask" exact element={<AskQuestion />} />
           <Route path="/home/:id" exact element={<MoreDetails />} />
         </Routes>
       </Router>

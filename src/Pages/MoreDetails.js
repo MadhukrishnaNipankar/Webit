@@ -9,6 +9,7 @@ import {
   DrawerContent,
   DrawerCloseButton,
 } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 function MoreDetails() {
   const [size, setSize] = React.useState("");
@@ -67,15 +68,26 @@ function MoreDetails() {
         </div>
         <hr />
         <div>
-          <div style={{ fontSize: "1.3rem" }}>
-            <i>Contribute a Solution</i>
+          <div class="form-floating my-3">
+            <textarea
+              class="form-control"
+              placeholder="Contribute Solution"
+              id="floatingTextarea2"
+              style={{ height: "20rem", maxWidth: "50rem" }}
+            ></textarea>
+            <label for="floatingTextarea2">Write your solution...</label>
           </div>
 
+          {/* post Solution */}
+          <button type="button" className="btn btn-outline-dark m-2">
+            Post Solution
+          </button>
+
+          {/* view Solution */}
           <button
             onClick={() => handleClick()}
             type="button"
-            class="btn btn-dark"
-            key={size}
+            className="btn btn-dark m-2"
           >
             View Solutions
           </button>
@@ -88,7 +100,7 @@ function MoreDetails() {
             <DrawerCloseButton />
 
             <DrawerHeader>
-              <h4>3 Solutions</h4>
+              <h4>Here are Top 4 Solutions: </h4>
             </DrawerHeader>
             <hr />
             <DrawerBody>
@@ -105,7 +117,7 @@ function MoreDetails() {
                 </p>
                 <br />
                 <code className="border">
-                  <Stack direction="row">
+                  <Stack direction="column">
                     <Code
                       children="'callback': (response) => {
                         console.log(response);
@@ -132,9 +144,18 @@ function MoreDetails() {
                   this should be only in your routing component to specify that
                   it's an id that is part of the exact route
                 </p>
+                <i>2004 upvotes</i>
+                <i>23 Downvotes</i>
+                <div className="d-flex">
+                  <Button flex="1" variant="ghost">
+                    👍 Upvote
+                  </Button>
+                  <Button flex="1" variant="ghost">
+                    👎 Downvote
+                  </Button>
+                </div>
               </div>
               <div className="my-2 card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <h5></h5>
                 <p>
                   What you are trying to do is link the entire group of objects
                   to one specific object. Instead you should put the Link
@@ -146,7 +167,7 @@ function MoreDetails() {
                 </p>
                 <br />
                 <code className="border">
-                  <Stack direction="row">
+                  <Stack direction="column">
                     <Code
                       children="'callback': (response) => {
                         console.log(response);
@@ -173,10 +194,18 @@ function MoreDetails() {
                   this should be only in your routing component to specify that
                   it's an id that is part of the exact route
                 </p>
+                <i>2004 upvotes</i>
+                <i>23 Downvotes</i>
+                <div className="d-flex">
+                  <Button flex="1" variant="ghost">
+                    👍 Upvote
+                  </Button>
+                  <Button flex="1" variant="ghost">
+                    👎 Downvote
+                  </Button>
+                </div>
               </div>
-
               <div className="my-2 card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <h5></h5>
                 <p>
                   What you are trying to do is link the entire group of objects
                   to one specific object. Instead you should put the Link
@@ -188,7 +217,7 @@ function MoreDetails() {
                 </p>
                 <br />
                 <code className="border">
-                  <Stack direction="row">
+                  <Stack direction="column">
                     <Code
                       children="'callback': (response) => {
                         console.log(response);
@@ -215,10 +244,18 @@ function MoreDetails() {
                   this should be only in your routing component to specify that
                   it's an id that is part of the exact route
                 </p>
+                <i>2004 upvotes</i>
+                <i>23 Downvotes</i>
+                <div className="d-flex">
+                  <Button flex="1" variant="ghost">
+                    👍 Upvote
+                  </Button>
+                  <Button flex="1" variant="ghost">
+                    👎 Downvote
+                  </Button>
+                </div>
               </div>
-
               <div className="my-2 card shadow p-3 mb-5 bg-body-tertiary rounded">
-                <h5></h5>
                 <p>
                   What you are trying to do is link the entire group of objects
                   to one specific object. Instead you should put the Link
@@ -230,7 +267,7 @@ function MoreDetails() {
                 </p>
                 <br />
                 <code className="border">
-                  <Stack direction="row">
+                  <Stack direction="column">
                     <Code
                       children="'callback': (response) => {
                         console.log(response);
@@ -257,6 +294,16 @@ function MoreDetails() {
                   this should be only in your routing component to specify that
                   it's an id that is part of the exact route
                 </p>
+                <i>2004 upvotes</i>
+                <i>23 Downvotes</i>
+                <div className="d-flex">
+                  <Button flex="1" variant="ghost">
+                    👍 Upvote
+                  </Button>
+                  <Button flex="1" variant="ghost">
+                    👎 Downvote
+                  </Button>
+                </div>
               </div>
             </DrawerBody>
           </DrawerContent>

@@ -1,21 +1,8 @@
 import React from "react";
-import { useEffect } from "react";
-import { useToast } from "@chakra-ui/react";
 import { Badge, Stack } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
-
-  const toast = useToast();
-  useEffect(() => {
-    toast({
-      title: "Logged in Successfully",
-      status: "success",
-      duration: 9000,
-      isClosable: true,
-      position: "top",
-    });
-  });
 
   return (
     <div
@@ -34,7 +21,7 @@ function Home() {
         <button
           type="button"
           class="btn btn-outline-dark"
-          onClick={() => navigate("/home")}
+          onClick={() => navigate("/ask")}
         >
           Ask a question
         </button>
